@@ -1,0 +1,88 @@
+h1,h2{
+   pointer-events: none;
+   z-index:999;
+text-align: center;
+position: fixed;
+left: 50%;
+transform: translate(-50%, 50%);
+font-family: 'PT Sans', sans-serif;
+}
+h1{
+height: 1em;
+}
+h2{font-size: 24px;
+   top: 82%;
+   width:100em;
+   /* width: 1000px;
+height: 200px; */
+}
+body{position: relative; 
+width:100vw;
+height:100vh}
+
+.cityElements{display: inline-block;}
+.cityElements .container{
+   top:10vh;
+   left:90vw ;
+background-image: url(img/blured/containter_blur.png);
+background-repeat: no-repeat;
+height: 400px; width:700px;
+background-size: 800px;
+transition: background-image 20s height 20s width 20s;
+}
+.cityElements .office{position: absolute; top: 40vh; left: -80vw;}
+.cityElements .pigeon{position: absolute; top: 50vh; left: 80vw;}
+.cityElements .plastic{position: absolute; top: 140vh; right: 60vw;}
+.cityElements .phone{position: absolute; top: -15vh; left: 80vw;}
+/* .cityElements .industrialization{position: absolute;top: 110vh; left: 57vw;} */
+.cityElements .cement{position: absolute; top: 100vh; left: -20vw;}
+.cityElements .modularsystem{position: absolute; top: 130vh; left: 40vw; z-index: -10;}
+
+
+#hover-img:hover{
+   opacity: 0;
+}
+
+.cityElements .container:hover {
+   background-image: url("img/container.png");
+   height: 500px; width:500px;
+background-size: 500px;
+ }
+ .cityElements .pigeon:hover{
+   background-image: url(img/pigeon.gif);
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+   /* transform:translateX(10px); */
+   }
+ .cityElements .office:hover {
+   background-image: url("img/office.jpg");
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+   /* height: auto; width:500px;
+background-size: 500px; */
+ }
+.cityElements .plastic:hover{
+   background-image: url(img/plastic.gif);
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+
+}
+.cityElements .phone:hover{
+   background-image: url(img/phone.gif);
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+
+
+}
+.cityElements .modularsystem:hover{
+   background-image: url(img/modularsystem.jpg); 
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+
+}
+.cityElements .cement:hover{
+   background-image: url(img/cement.gif);
+   background-size: auto 100%;
+   background-repeat: no-repeat;
+
+}
